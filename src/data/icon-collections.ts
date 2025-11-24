@@ -1,0 +1,103 @@
+import type { IconCollection } from "@/types/icons"
+
+// Helper function to create unique IDs
+const createId = (name: string, library: string) => `${library}-${name.toLowerCase().replace(/\s+/g, "-")}`
+
+export const iconCollections: IconCollection[] = [
+  {
+    id: createId("Activity", "lucide"),
+    name: "Activity",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>',
+    library: "lucide",
+    categories: ["ui"],
+    tags: ["pulse", "heartbeat", "health", "monitor"],
+  },
+  {
+    id: createId("Alert Circle", "lucide"),
+    name: "Alert Circle",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>',
+    library: "lucide",
+    categories: ["ui"],
+    tags: ["warning", "error", "notification"],
+  },
+  {
+    id: createId("Adjustments", "heroicons"),
+    name: "Adjustments",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6V4M12 6C10.8954 6 10 6.89543 10 8C10 9.10457 10.8954 10 12 10M12 6C13.1046 6 14 6.89543 14 8C14 9.10457 13.1046 10 12 10M6 18C7.10457 18 8 17.1046 8 16C8 14.8954 7.10457 14 6 14M6 18C4.89543 18 4 17.1046 4 16C4 14.8954 4.89543 14 6 14M6 18V20M6 14V4M12 10V20M18 13C16.8954 13 16 12.1046 16 11C16 9.89543 16.8954 9 18 9M18 13C19.1046 13 20 12.1046 20 11C20 9.89543 19.1046 9 18 9M18 13V20M18 9V4"></path></svg>',
+    library: "heroicons",
+    categories: ["ui"],
+    tags: ["settings", "controls", "sliders"],
+  },
+  {
+    id: createId("Access Time", "material"),
+    name: "Access Time",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>',
+    library: "material",
+    categories: ["ui", "media"],
+    tags: ["clock", "time", "schedule"],
+  },
+  {
+    id: createId("Account Circle", "heroicons"),
+    name: "Account Circle",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="10" r="3"></circle><path d="M7 20.662V19C7 17.3431 8.34315 16 10 16H14C15.6569 16 17 17.3431 17 19V20.662"></path></svg>',
+    library: "heroicons",
+    categories: ["ui", "media"],
+    tags: ["user", "profile", "person", "avatar"],
+  },
+  {
+    id: createId("Academic Cap", "heroicons"),
+    name: "Academic Cap",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14L21 9L12 4L3 9L12 14Z"></path><path d="M12 14L18.5 10.5V17.5L12 21L5.5 17.5V10.5L12 14Z"></path><path d="M12 14L21 9L12 4L3 9L12 14Z"></path><path d="M19.5 13.5V9"></path></svg>',
+    library: "heroicons",
+    categories: ["ui", "education"],
+    tags: ["graduation", "education", "university", "school", "hat"],
+  },
+  {
+    id: createId("Address Book", "fontawesome"),
+    name: "Address Book",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 2H4C3.44772 2 3 2.44772 3 3V21C3 21.5523 3.44772 22 4 22H16C16.5523 22 17 21.5523 17 21V3C17 2.44772 16.5523 2 16 2Z"></path><path d="M17 6H20C20.5523 6 21 6.44772 21 7V9C21 9.55228 20.5523 10 20 10H17"></path><path d="M17 14H20C20.5523 14 21 14.4477 21 15V17C21 17.5523 20.5523 18 20 18H17"></path><circle cx="10" cy="8.5" r="2.5"></circle><path d="M6.5 15H13.5C13.5 13.067 11.933 11.5 10 11.5C8.067 11.5 6.5 13.067 6.5 15Z"></path></svg>',
+    library: "fontawesome",
+    categories: ["ui", "communication"],
+    tags: ["contacts", "directory", "phonebook"],
+  },
+  {
+    id: createId("Cloud", "fontawesome"),
+    name: "Cloud",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10H16.74C16.3659 7.31365 14.0251 5.25 11.25 5.25C7.93997 5.25 5.25 7.93997 5.25 11.25C5.25 11.3085 5.25129 11.3667 5.25385 11.4244C3.3663 11.7241 1.93823 13.3638 1.93823 15.3C1.93823 17.4719 3.71776 19.2514 5.88971 19.2514H18C20.0711 19.2514 21.75 17.5725 21.75 15.5014C21.75 13.4304 20.0711 11.7514 18 11.7514C17.9887 11.7514 17.9774 11.7514 17.9662 11.7515C17.9884 11.5044 18 11.2537 18 11C18 10.6624 17.9694 10.3309 17.9103 10.0108"></path></svg>',
+    library: "fontawesome",
+    categories: ["ui", "weather"],
+    tags: ["storage", "weather", "upload", "sky"],
+  },
+  {
+    id: createId("Alarm", "material"),
+    name: "Alarm",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"></circle><path d="M12 9V13L15 15"></path><path d="M5 3L2 6"></path><path d="M22 6L19 3"></path><path d="M6 19L4 21"></path><path d="M18 19L20 21"></path></svg>',
+    library: "material",
+    categories: ["ui", "media"],
+    tags: ["clock", "time", "alert", "notification"],
+  },
+  {
+    id: createId("Archive", "lucide"),
+    name: "Archive",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="5" x="2" y="3" rx="1"></rect><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"></path><path d="M10 12h4"></path></svg>',
+    library: "lucide",
+    categories: ["ui"],
+    tags: ["box", "storage", "save"],
+  },
+  {
+    id: createId("Arrow Right", "heroicons"),
+    name: "Arrow Right",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12H19M19 12L12 5M19 12L12 19"></path></svg>',
+    library: "heroicons",
+    categories: ["arrows"],
+    tags: ["direction", "navigation", "next"],
+  },
+  {
+    id: createId("Bell", "lucide"),
+    name: "Bell",
+    svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path></svg>',
+    library: "lucide",
+    categories: ["ui"],
+    tags: ["notification", "alert", "sound"],
+  },
+]
